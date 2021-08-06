@@ -1,0 +1,189 @@
+.UIDatePickerLight {
+  .DayPicker-Day {
+    width: 34px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 4px;
+    &:focus {
+      outline: 0;
+      // box-shadow: 0 0 0 3px rgba(66,153,225,0.6);
+    }
+  }
+
+  .DayPicker-Day--today {
+    color: #4299e1;
+    font-weight: 700;
+  }
+
+  .DayPicker-Day--start {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+
+  .DayPicker-Day--end {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+
+  .DayPicker-WeekdaysRow {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    abbr {
+      text-decoration: none;
+    }
+  }
+
+  .DayPicker-Week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+  }
+
+  .DayPicker-Month {
+    margin: 0;
+  }
+
+  .DayPicker-Months {
+    justify-content: space-between;
+    flex-wrap: nowrap !important;
+  }
+
+  .DayPicker-Month:first-child {
+    width: 100%;
+  }
+
+  .DayPicker-NavBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .DayPicker-NavButton {
+    position: static;
+    margin-top: 2px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .DayPicker-NavButton--prev {
+    margin-right: 0.6rem;
+  }
+
+  .DayPicker-wrapper {
+    margin-bottom: 0;
+  }
+
+  .DayPicker-wrapper:focus {
+    outline: none;
+  }
+
+  .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    background-color: #3182ce;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+}
+
+.UIDatePickerDark {
+  .DayPicker-Day {
+    width: 34px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 4px;
+    &:focus {
+      outline: 0;
+      // box-shadow: 0 0 0 3px rgba(66,153,225,0.6);
+    }
+  }
+
+  .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+    background-color: var(--chakra-colors-whiteAlpha-300)!important;
+  }
+
+
+  .DayPicker-Day--today {
+    color: #4299e1;
+    font-weight: 700;
+  }
+
+  .DayPicker-Day--start {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+
+  .DayPicker-Day--end {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+
+  .DayPicker-WeekdaysRow {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    abbr {
+      text-decoration: none;
+    }
+  }
+
+  .DayPicker-Week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+  }
+
+  .DayPicker-Month {
+    margin: 0;
+  }
+
+  .DayPicker-Months {
+    justify-content: space-between;
+    flex-wrap: nowrap !important;
+  }
+
+  .DayPicker-Month:first-child {
+    width: 100%;
+  }
+
+  .DayPicker-NavBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .DayPicker-NavButton {
+    position: static;
+    margin-top: 2px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .DayPicker-NavButton--prev {
+    margin-right: 0.6rem;
+  }
+
+  .DayPicker-wrapper {
+    margin-bottom: 0;
+  }
+
+  .DayPicker-wrapper:focus {
+    outline: none;
+  }
+
+  .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    background-color: #63B3ED;
+    color: #000000;
+    border-radius: 4px;
+  }
+}
+.DayPicker {
+  width: 100%;
+}
